@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.10/cdn.js"></script>
+</head>
+
+
+<body>
+    <div x-data="{nama : 'Wulansari', nilai : 87}">
+        <h1>
+            Hallo, nama saya : <span x-text="nama"></span>
+        </h1>
+        <h1>
+            Website dasar : <span x-text="nilai"></span>
+        </h1>
+        <h1>
+            <span x-text="nilai < 75 ? 'mengulang' : 'tidak mengulang'">
+                </span>
+        </h1>
+    </div>
+</body>
+
+</html>
