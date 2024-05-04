@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphine</title>
+    <script defer scr="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.10/cdn.js"></script>
+</head>
+
+<body>
+    <div x-data="{ count : 0}">
+        <button @click="count--">
+            -
+        </button>
+        <span x-text="count">
+            0   
+        </span>
+        <button @click="count++">
+            +
+        </button>
+    </div>
+</body>
+
+</html>
